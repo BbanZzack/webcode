@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kibum's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+  </head>
+  <body onLoad="MM_preloadImages('img/img_Editorial/04_calendar_roll.png','img/img_Editorial/05_poster_roll.png','img/img_Editorial/06_reflet_roll.png','img/img_Editorial/07_bookcover_roll.png')">
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="img/01_logo.png" alt="사람을 위한 디자인">
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="main.html">Profile</a></li>
+            <li><a href="editorial.html">Editorial</a></li>
+            <li><a href="video.html">Videos</a></li>
+            <li><a href="package.html">Package</a></li>
+            <li><a href="https://www.youtube.com/channel/UC1sG3Tp3TCFi-Lan1J6bZAw?view_as=subscriber">My Youtube</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <!---메인 부분-->
+      <!---타이틀 부분-->
+      <div class="PW_main"><!--에디토리얼 메인 키비주얼 영역---->
+      </div>
+      <!---프로필 부분-->
+      <div class="PW">
+        <div class="PWwrap">
+         <div class="PWminititle"><img src="img/img_package/03_Pwminititle.png" alt"minititle"></div>
+         <div class="PW01"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Calendar','','img/img_package/04_package_roll.png',1)"><img src="img/img_package/04_package.png" alt="calendar" width="1004" height="418" id="Calendar"></a></div>
+         <div class="PW02"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('poster','','img/img_package/05_web_roll.png',1)"><img src="img/img_package/05_web.png" alt="poster" width="982" height="418" id="poster"></a></div>
+       </div>
+      </div>
+	<div class="footer"><img src="img/footer.png" alt"footer"></div>
+    </section>
+  </body>
+</html>
